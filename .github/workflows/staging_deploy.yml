@@ -101,7 +101,7 @@ jobs:
             docker run -d \
               --name sample-app-staging \
               --restart unless-stopped \
-              -p 80:8000 \
+              -p 8000:8000 \
               ghcr.io/${{ github.repository }}:staging
 
             # Clean up old images

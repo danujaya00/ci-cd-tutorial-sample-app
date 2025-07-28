@@ -21,3 +21,7 @@ def menu():
 @app.route('/ucsc')
 def ucsc():
     return jsonify({ "name": "University of Colombo School of Computing", "location": "Colombo, Sri Lanka" })
+
+@app.route('/uoc')
+def uoc():
+    return jsonify({ "name": "University of Colombo", "location": "Colombo, Sri Lanka" })
